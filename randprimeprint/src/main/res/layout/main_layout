@@ -1,0 +1,39 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Starting from: number"
+        />
+<EditText
+    android:id="@+id/max"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:layout_below="@+id/min"
+    android:hint="Ending to: number"
+    />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Primes"
+        android:layout_below="@+id/max"
+        android:layout_centerHorizontal="true"/>
+   <ScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/button">
+    <TextView
+       android:id="@+id/text"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textStyle="bold"/>
+   </ScrollView>
+
+</RelativeLayout>
